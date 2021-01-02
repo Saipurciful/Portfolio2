@@ -8,10 +8,10 @@
 
 :root {
   --primaryColor: #fff;
-  --navColor1: #CCA4C9;
-  --navColor2: #AC73A7;
-  --navColor3: #A1B8C5;
-  --navColor4: #6E8FB0;
+  --navColor1: #6E8FB0;
+  --navColor2: #CCA4C9;
+  --navColor3: #AC73A7;
+  --navColor4: #88c3e6;
   --navColor5: #51a1ec;
 }
 
@@ -256,14 +256,18 @@ section {
 
 section#home {
   background-image: url("https://images.pexels.com/photos/4424287/pexels-photo-4424287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
   background-size: cover;
   background-position: center center;
+
 }
 
 
 
+.home a,
 section#home a,
 #hpage a {
+
   position: absolute;
   z-index: 2;
   top: 1.5rem;
@@ -275,16 +279,24 @@ section#home a,
   border-bottom: 1px solid var(--primaryColor);
 }
 
-.about {
+.about,
+section#about {
+  height: 80vh;
   background-color: var(--navColor2);
 }
 
-.portfolio {
+.portfolio,
+section#portfolio {
   background-color: var(--navColor3);
 }
 
-.contact {
+.contact,
+section#contact {
   background-color: var(--navColor4);
+}
+
+section#resume {
+  background-color: var(--navColor5);
 }
 
 .resume {
@@ -310,37 +322,21 @@ section#home a,
   }
 }
 
-/* Footer */
-/* .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: whitesmoke;
-  text-align: center;
-  color: rgb(39, 192, 179);
+/* Contact page */
+.container-fluid {
+  margin: 10px;
 }
 
-.fixed-footer {
-  width: 100%;
-  position: fixed;
-  padding: 10px 0;
-  left: 0;
-  bottom: 0;
-} */
+.col {
+  padding-left: 250px;
+}
 
-/* resume */
-/* .containerResume {
-  background-color: rgb(241, 241, 241);
-  padding-bottom: 120px;
-  padding-top: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+.row {
+  padding-left: 200px;
+}
 
-} */
+h1,
+h3 {
 
-/* iframe {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 0;
-} */
+  font-family: 'Emilys Candy', cursive;
+}
