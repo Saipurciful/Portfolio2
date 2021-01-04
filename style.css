@@ -25,6 +25,7 @@ body {
 }
 
 
+
 /* --- Navigation Menu ------------------------------ */
 
 /* Overlay */
@@ -61,6 +62,7 @@ body {
 nav,
 nav ul {
   height: 100vh;
+
   margin: 0;
   padding: 0;
 }
@@ -80,6 +82,7 @@ nav ul {
 nav ul li {
   height: 20%;
   overflow: hidden;
+  margin-left: 0;
 }
 
 nav li a,
@@ -255,7 +258,7 @@ nav li:nth-of-type(5) {
   color: var(--primaryColor);
 } */
 
-section#home {
+/* section#home {
   background-image: url("https://images.pexels.com/photos/4424287/pexels-photo-4424287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
   height: 100vh;
@@ -277,7 +280,7 @@ section#home a {
   padding-bottom: 5px;
   color: var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
-}
+} */
 
 
 .about {
@@ -286,17 +289,19 @@ section#home a {
   background-color: var(--navColor2);
 }
 
-/* .portfolio {
+#portfolio {
   width: 100%;
   height: 100vh;
+  margin-bottom: 0;
   background-color: var(--navColor3);
-} */
+}
 
 
-.contact {
+#contact {
   width: 100vw;
   height: 100vh;
   background-color: var(--navColor4);
+  margin-top: 0;
 
 }
 

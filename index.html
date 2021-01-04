@@ -14,6 +14,7 @@
   <title>Portfolio</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -21,17 +22,24 @@
   <div class="overlay overlay-slide-left" id="overlay">
 
     <!-- Menu Items -->
+
     <nav>
-      <ul>
+
+      <ul class="navbar-nav ml-auto">
         <li id="nav-1" class="slide-out-1"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
 
         <li id="nav-2" class="slide-out-2"><a href="about.html"><i class="fas fa-user-alt"></i> About Me</a></li>
-        <li id="nav-3" class="slide-out-3"><a href="portfolio.html"><i class="far fa-file-code"></i> Portfolio</a></li>
-        <li id="nav-4" class="slide-out-4"><a href="contact.html"><i class="far fa-address-book"></i> Contact</a></li>
-        <li id="nav-5" class="slide-out-5"><a href="resume.html"><i class="fas fa-user-graduate"></i> Resume</a></li>
+        <li id="nav-3" class="slide-out-3"><a href="portfolio.html"><i class="far fa-file-code"></i> Portfolio</a>
+        </li>
+        <li id="nav-4" class="slide-out-4"><a href="contact.html"><i class="far fa-address-book"></i> Contact</a>
+        </li>
+        <li id="nav-5" class="slide-out-5"><a href="resume.html"><i class="fas fa-user-graduate"></i> Resume</a>
+        </li>
       </ul>
+
     </nav>
   </div>
+
 
 
   <!-- Menu Bars -->
@@ -40,7 +48,171 @@
     <div class="bar2"></div>
     <div class="bar3"></div>
   </div>
-  <section id="home"><a href="#">Sai Purciful</a></section>
+  <!-- <section id="home"><a href="#">Sai Purciful</a></section> -->
+
+  <!-- <div class="container navbar">
+    <header>
+      <div class="lgo">
+        <h1>Sai Purciful</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about"></a> About Me</li>
+          <li><a href="#skills"></a> Skills</li>
+          <li><a href="#practice"></a>My practice</li>
+        </ul>
+      </nav>
+    </header>
+
+  </div> -->
+
+  <div class="container main-info-section">
+
+    <div class="text">
+      <h1>
+        <span>H</span>
+        <span class="m-left">i</span>
+        <span class="m-left">,</span>
+        <br>
+        <span>I</span>
+        <span class="m-left">'</span>
+        <span class="m-left">m</span>
+        <span class="name">S</span>
+        <span class="m-left name">a</span>
+        <span class="m-left name">i</span>
+        <span class="m-left">,</span>
+        <br>
+        <span>W</span>
+        <span class="m-left">e</span>
+        <span class="m-left">b</span>
+        <span>D</span>
+        <span class="m-left">e</span>
+        <span class="m-left">v</span>
+        <span class="m-left">e</span>
+        <span class="m-left">l</span>
+        <span class="m-left">o</span>
+        <span class="m-left">p</span>
+        <span class="m-left">e</span>
+        <span class="m-left">r</span>
+      </h1>
+      <p>CSS / JavaScript / React</p>
+      <a href="#contact"> contact me</a>
+
+    </div>
+    <div class="profile-image">
+      <img src="pictures/22.png" alt="">
+    </div>
+  </div>
+
+
+
+  <div class="container about" id="about">
+    <h1>About</h1>
+    <div class="about-me-info">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta assumenda, provident enim perspiciatis
+        eum maiores error labore corporis quos distinctio!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum consectetur odit quo deleniti
+        inventore velit modi possimus saepe quod?</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut praesentium soluta hic reprehenderit nemo
+        iure enim quisquam tempore neque non.</p>
+    </div>
+    <img src="img/dotted-shape.png" alt="">
+  </div>
+
+  <div class="container skills" id="skills">
+    <h1>Skills</h1>
+    <p class="skills-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eum sit magni magnam
+      soluta necessitatibus quos deserunt ullam at dolorem.</p>
+
+    <div class="html">
+      <div class="tag-html">
+        <p>HTML</p>
+      </div>
+    </div>
+    <div class="progressbar">
+      <div class="bar-html">
+      </div>
+    </div>
+    <div class="html">
+      <div class="tag-css">
+        <p>HTML</p>
+      </div>
+    </div>
+    <div class="progressbar">
+      <div class="bar-css">
+      </div>
+    </div>
+    <div class="html">
+      <div class="tag-javascript">
+        <p>HTML</p>
+      </div>
+    </div>
+    <div class="progressbar">
+      <div class="bar-javascript">
+
+      </div>
+    </div>
+    <div class="html">
+      <div class="tag-react">
+        <p>HTML</p>
+      </div>
+    </div>
+    <div class="progressbar">
+      <div class="bar-react">
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container portfolio" id="portfolio" class="portfolioSec">
+    <h1> Portfolio</h1>
+    <div class="portfolio-category">
+      <button id="designing" class="active" onclick="showRequiredCategory(this)"> Web developer</button>
+      <button id="animation" onclick="showRequiredCategory(this)"> Web Animation</button>
+      <button id="project" onclick="showRequiredCategory(this)">React Projects</button>
+    </div>
+    <div class="category-designing showCategory">
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+    </div>
+    <div class="category-animation hideCategory">
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+    </div>
+    <div class="category-project hideCategory">
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+    </div>
+
+  </div>
+
+  <div class="container contact" id="contact">
+    <h1>Contact</h1>
+    <form action="mailto:saipurciful@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Full Name">
+      <input type="email" placeholder="Email">
+
+      <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <footer>
+
+    <p>2021 Copyright. All Rights Reserved.</p>
+  </footer>
 
   <!-- Script -->
   <script src="script.js"></script>
