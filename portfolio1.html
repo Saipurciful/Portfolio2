@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" style="box-sizing: border-box;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="pictures/android-chrome-192x192.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio1.css">
+</head>
+
+<body style="background-color: #cdaac0; overflow-x: hidden;">
+    <div class="container navbar">
+        <header>
+            <div class="lgo">
+                <a href="index.html">
+                    <h1> Sai Purciful</h1>
+                </a>
+            </div>
+            <!-- Menu OverLay -->
+            <div class="overlay overlay-slide-left" id="overlay">
+
+                <!-- Menu Items -->
+
+                <nav>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li id="nav-1" class="slide-out-1"><a href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+
+                        <li id="nav-2" class="slide-out-2"><a href="about.html"><i class="fas fa-user-alt"></i> About
+                                Me</a></li>
+
+                        <li id="nav-3" class="slide-out-3"><a href="portfolio.html"><i class="far fa-file-code"></i>
+                                Portfolio</a>
+                        </li>
+
+                        <li id="nav-4" class="slide-out-4"><a href="contact.html"><i class="far fa-address-book"></i>
+                                Contact</a>
+                        </li>
+                        <li id="nav-5" class="slide-out-5"><a href="resume.html"><i class="fas fa-user-graduate"></i>
+                                Resume</a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- Menu Bars -->
+        <div class="menu-bars" id="menu-bars">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+    </div>
+
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('people')"> People</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row" style="padding: 25px;">
+        <div class="column nature">
+            <div class="content">
+                <img src="pictures/burger.png" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <i class="fab fa-github"></i> Code <br>
+                <i class="fab fa-chrome"></i> Website
+
+
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="pictures/calendar.png" alt="Lights" style="width:100%">
+                <h4>Lights</h4>
+                <i class="fab fa-github"></i> Code <br>
+                <i class="fab fa-chrome"></i> Website
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="pictures/cocktail.png" alt="Nature" style="width:100%">
+                <h4>Forest</h4>
+                <i class="fab fa-github"></i> Code <br>
+                <i class="fab fa-chrome"></i> Website
+            </div>
+        </div>
+
+        <div class="column cars">
+            <div class="content">
+                <img src="pictures/cocktail.png" alt="Car" style="width:100%">
+                <h4>Retro</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+                <img src="pictures/codeq.png" alt="Car" style="width:100%">
+                <h4>Fast</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+                <img src="pictures/noteTaker.png" alt="Car" style="width:100%">
+                <h4>Classic</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+                <img src="pictures/pwgen.png" alt="People" style="width:100%">
+                <h4>Girl</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <!-- <div class="column people">
+            <div class="content">
+                <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+                <h4>Man</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div> -->
+        <!-- END GRID -->
+    </div>
+
+    <footer>
+
+        <p>2021 Copyright. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="portfolio1.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

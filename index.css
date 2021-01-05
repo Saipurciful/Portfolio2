@@ -314,7 +314,7 @@ div.hideCategory {
 form input,
 form textarea {
     display: block;
-    width: 500px;
+    width: 400px;
     padding: 20px;
     background-color: #252627;
     border: 3px solid #707070;
@@ -323,8 +323,9 @@ form textarea {
     font-size: 1.2rem;
     color: #fff;
     position: relative;
-    left: 50%;
-    right: 50%;
+    top: 5%;
+    left: 20%;
+    /* right: 50%; */
     transform: translateX(-50%);
 }
 
@@ -335,14 +336,64 @@ form input:last-child {
     cursor: pointer;
 }
 
-footer hr {
-    border: 2px solid #707070;
-    margin-top: 80px;
-}
 
 footer p {
     text-align: center;
     color: #707070;
     font-size: 1.2rem;
-    padding: 30px 0;
+    padding: 20px 0;
+}
+
+/* make the header letters shake when hoover */
+.text span:hover,
+.m-left:hover,
+.name:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
