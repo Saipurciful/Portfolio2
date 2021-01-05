@@ -18,39 +18,48 @@
 </head>
 
 <body>
-  <!-- Menu OverLay -->
-  <div class="overlay overlay-slide-left" id="overlay">
+  <div class="container navbar">
+    <header>
+      <div class="lgo">
+        <a href="index.html">
+          <h1> Sai Purciful</h1>
+        </a>
+      </div>
+      <!-- Menu OverLay -->
+      <div class="overlay overlay-slide-left" id="overlay">
 
-    <!-- Menu Items -->
+        <!-- Menu Items -->
 
-    <nav>
+        <nav>
 
-      <ul class="navbar-nav ml-auto">
-        <li id="nav-1" class="slide-out-1"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <ul class="navbar-nav ml-auto">
+            <li id="nav-1" class="slide-out-1"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
 
-        <li id="nav-2" class="slide-out-2"><a href="about.html"><i class="fas fa-user-alt"></i> About Me</a></li>
-        <li id="nav-3" class="slide-out-3"><a href="portfolio.html"><i class="far fa-file-code"></i> Portfolio</a>
-        </li>
-        <li id="nav-4" class="slide-out-4"><a href="contact.html"><i class="far fa-address-book"></i> Contact</a>
-        </li>
-        <li id="nav-5" class="slide-out-5"><a href="resume.html"><i class="fas fa-user-graduate"></i> Resume</a>
-        </li>
-      </ul>
+            <li id="nav-2" class="slide-out-2"><a href="about.html"><i class="fas fa-user-alt"></i> About Me</a></li>
 
-    </nav>
-  </div>
+            <li id="nav-3" class="slide-out-3"><a href="portfolio.html"><i class="far fa-file-code"></i> Portfolio</a>
+            </li>
+
+            <li id="nav-4" class="slide-out-4"><a href="contact.html"><i class="far fa-address-book"></i> Contact</a>
+            </li>
+            <li id="nav-5" class="slide-out-5"><a href="resume.html"><i class="fas fa-user-graduate"></i> Resume</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </header>
 
 
+    <!-- Menu Bars -->
+    <div class="menu-bars" id="menu-bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <!-- <section id="home"><a href="#">Sai Purciful</a></section> -->
 
-  <!-- Menu Bars -->
-  <div class="menu-bars" id="menu-bars">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
-  <!-- <section id="home"><a href="#">Sai Purciful</a></section> -->
-
-  <!-- <div class="container navbar">
+    <!-- <div class="container navbar">
     <header>
       <div class="lgo">
         <h1>Sai Purciful</h1>
@@ -66,7 +75,7 @@
     </header>
 
   </div> -->
-
+  </div>
   <div class="container main-info-section">
 
     <div class="text">
@@ -120,6 +129,39 @@
     <img src="img/dotted-shape.png" alt="">
   </div>
 
+
+
+  <div class="container portfolio" id="portfolio" class="portfolioSec">
+    <h1> Portfolio</h1>
+    <div class="portfolio-category">
+      <button id="designing" class="active" onclick="showRequiredCategory(this)"> Web developer</button>
+      <button id="animation" onclick="showRequiredCategory(this)"> Web Animation</button>
+      <button id="project" onclick="showRequiredCategory(this)">React Projects</button>
+    </div>
+    <div class="category-designing showCategory">
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+    </div>
+    <div class="category-animation hideCategory">
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+    </div>
+    <div class="category-project hideCategory">
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+      <a href=""><img src="img/1.png" alt=""></a>
+    </div>
+
+  </div>
+
   <div class="container skills" id="skills">
     <h1>Skills</h1>
     <p class="skills-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eum sit magni magnam
@@ -164,37 +206,6 @@
       </div>
 
     </div>
-  </div>
-
-  <div class="container portfolio" id="portfolio" class="portfolioSec">
-    <h1> Portfolio</h1>
-    <div class="portfolio-category">
-      <button id="designing" class="active" onclick="showRequiredCategory(this)"> Web developer</button>
-      <button id="animation" onclick="showRequiredCategory(this)"> Web Animation</button>
-      <button id="project" onclick="showRequiredCategory(this)">React Projects</button>
-    </div>
-    <div class="category-designing showCategory">
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-    </div>
-    <div class="category-animation hideCategory">
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-    </div>
-    <div class="category-project hideCategory">
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-      <a href=""><img src="img/1.png" alt=""></a>
-    </div>
-
   </div>
 
   <div class="container contact" id="contact">
