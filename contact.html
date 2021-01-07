@@ -1,76 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="box-sizing: border-box;">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Portfolio</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="/pictures/android-chrome-192x192.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="contact">
-    <!-- Menu OverLay -->
-    <div class="overlay overlay-slide-left" id="overlay">
+<body>
 
-        <!-- Menu Items -->
-        <nav>
-            <ul>
-                <li id="nav-1" class="slide-out-1"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
 
-                <li id="nav-2" class="slide-out-2"><a href="about.html"><i class="fas fa-user-alt"></i> About Me</a>
-                </li>
-
-                <li id="nav-3" class="slide-out-3"><a href="portfolio1.html"><i class="far fa-file"></i> Portfolio</a>
-                </li>
-
-                <li id="nav-4" class="slide-out-4"><a href="contact.html"><i class="far fa-address-book"></i>
-                        Contact</a>
-                </li>
-                <li id="nav-5" class="slide-out-5"><a href="resume.html"><i class="fas fa-user-graduate"></i> Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <section id="hpage"><a href="index.html"> Sai Purciful </a></section>
-
-    <!-- Menu Bars -->
-    <div class="menu-bars" id="menu-bars">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div><br>
-    <div>
-        <h1 class="Header"> Contact</h1>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3 col-md-9">
-                <h1>Suthunya (Sai) Purciful</h1>
-                <h3 class="title">Web Developer</h3><br><br>
-
-                <a target="_blank" href="tel:7022036562" href="https://github.com/Saipurciful"><i
-                        class="fas fa-phone"></i>
-
+    <div class="container navbar">
+        <header>
+            <div class="lgo">
+                <a href="index.html">
+                    <h1> Sai Purciful</h1>
                 </a>
-                <a target="_blank" href="https://github.com/Saipurciful"><i class="fab fa-github"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/suthunya-purciful-59956a18b/"><i
-                        class="fab fa-linkedin"></i></a>
-                <a target="_blank" href="mailto:saipurciful@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
+            <!-- Menu OverLay -->
+            <div class="overlay overlay-slide-left" id="overlay">
+
+                <!-- Menu Items -->
+
+                <nav>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li id="nav-1" class="slide-out-1"><a href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+
+                        <li id="nav-2" class="slide-out-2"><a href="about.html"><i class="fas fa-user-alt"></i> About
+                                Me</a></li>
+
+                        <li id="nav-3" class="slide-out-3"><a href="portfolio1.html"><i class="far fa-file-code"></i>
+                                Portfolio</a>
+                        </li>
+
+                        <li id="nav-4" class="slide-out-4"><a href="contact.html"><i class="far fa-address-book"></i>
+                                Contact</a>
+                        </li>
+                        <li id="nav-5" class="slide-out-5"><a href="resume.html"><i class="fas fa-user-graduate"></i>
+                                Resume</a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- Menu Bars -->
+        <div class="menu-bars" id="menu-bars">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
+
     </div>
 
+    <div class="container contact" id="contact">
+        <h1>Contact</h1>
+        <form action="mailto:saipurciful@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+
+            <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
     <script src="script.js"></script>
 
 </body>

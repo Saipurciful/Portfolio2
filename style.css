@@ -101,6 +101,11 @@ nav li a,
 
 }
 
+.Header {
+  background-color: var(--navColor5);
+  padding: 4%;
+}
+
 /* when hover over, li get little bit bigger */
 nav li a:hover {
   transform: scale(1.2);
@@ -259,50 +264,12 @@ nav li:nth-of-type(5) {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
-/* --- Sections ------------------------------------ */
 
-/* section {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: top;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: larger;
-  color: var(--primaryColor);
-} */
-
-/* section#home {
-  background-image: url("https://images.pexels.com/photos/4424287/pexels-photo-4424287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-
-}
-
-
-section#home a {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: 2;
-  top: 1.5rem;
-  left: 1.5rem;
-  text-decoration: none;
-  font-size: 0.8rem;
-  padding-bottom: 5px;
-  color: var(--primaryColor);
-  border-bottom: 1px solid var(--primaryColor);
-} */
-
-
-.about {
+#about {
   width: 100vw;
   height: 100vh;
   background-color: var(--navColor2);
+
 }
 
 #portfolio {
@@ -327,14 +294,6 @@ section#home a {
   margin-top: 0;
 
 }
-
-
-
-/* #resume {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--navColor5);
-} */
 
 .resume {
   background-color: var(--navColor5);

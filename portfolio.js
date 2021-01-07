@@ -1,4 +1,3 @@
-
 // bring in all boxes
 const boxes = document.querySelectorAll('.box');
 // fire off the even when scroll, then have function of checkBoxes

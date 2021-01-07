@@ -29,18 +29,12 @@
     background-color: var(--navColor3);
 }
 
-/* h1 {
-    margin: 10px;
-} */
 
 /* display:flex = align the H2 inside to the center */
 /* box-shadow = 2px 4px for the offset, 5px for the blur */
 /* transform = animation for boxes moving along X (horizontal) line */
 .box {
     background-color: whitesmoke;
-    /* color: #fff;
-    display: flex; */
-    /* align-items: bottom; */
     justify-content: center;
     width: 450px;
     height: 400px;
