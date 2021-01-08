@@ -16,6 +16,7 @@
     <link rel="icon" type="image/png" href="/pictures/android-chrome-192x192.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact1.css">
 </head>
 
 <body>
@@ -67,20 +68,49 @@
         </div>
 
     </div>
-    <div>
-        <h1 class="Header"> Resume</h1>
+    <div class="body">
+        <div class="containerCon">
+            <div class="cardS">
+                <div class="contentCard">
+                    <img src="/pictures/phone-call.png" alt="" style="width: 230px">
+                    <a target="_blank" href="tel:7022036562" href="https://github.com/Saipurciful">Phone</a>
+                </div>
+            </div>
+            <div class="cardS">
+                <div class="contentCard">
+                    <img src="/pictures/email.png" alt="" style="width: 250px">
+                    <a target="_blank" href="mailto:saipurciful@gmail.com">Email</a>
+                </div>
+            </div>
 
+            <div class="cardS">
 
-        <iframe class="resume" src="resume.pdf"></iframe>
-        <!-- <div>
-            </div> -->
+                <div class="contentCard">
 
+                    <img src="/pictures/github (1).png" alt="" style="width: 250px">
+                    <a target="_blank" href="https://github.com/Saipurciful"></i>Github</a>
+                </div>
+            </div>
+            <div class="cardS">
+                <div class="contentCard">
+                    <img src="/pictures/linkedin-logo.png" alt="" style="width: 250px">
+                    <a target="_blank" href="https://www.linkedin.com/in/suthunya-purciful-59956a18b/">Linkedin</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="foot">
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
 
-        <p>2021 Copyright. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+        VanillaTilt.init(document.querySelectorAll(".cardS"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max.glare": 1,
+        });
+
+    </script>
 </body>
 
 </html>
