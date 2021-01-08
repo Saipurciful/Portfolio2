@@ -22,9 +22,10 @@ html {
     justify-content: space-between;
 }
 
-body {
+
+/* body {
     background-color: #252627;
-}
+} */
 
 header {
     display: flex;
@@ -57,7 +58,12 @@ li {
     margin-left: 30px;
 }
 
-a {
+#nav-1 a,
+#nav-2 a,
+#nav-3 a,
+#nav-4 a,
+#nav-5 a,
+.lgo a {
     text-decoration: none;
     font-size: .9rem;
     text-transform: uppercase;
@@ -226,30 +232,6 @@ div[class^='tag-'] p {
     padding-top: 3px;
 }
 
-.progressbar {
-    position: relative;
-    width: 600px;
-    height: 20px;
-    border: 2px solid #48cfad;
-    border-radius: 20px;
-    margin-top: 7px;
-}
-
-div[class^='bar-'] {
-    position: absolute;
-    background-color: #48cfad;
-    height: 10px;
-    border-radius: 20px;
-    margin: 2.7px;
-}
-
-.bar-html,
-.bar-css,
-.bar-javascript,
-.bar-react {
-    width: calc(0 - 6px);
-}
-
 .work-category button {
     text-transform: capitalize;
     border: 3px solid #ed5565;
@@ -327,11 +309,12 @@ form input:last-child {
 }
 
 
-footer p {
+.foot {
     text-align: center;
     color: #707070;
     font-size: 1.2rem;
     padding: 20px 0;
+    background-color: #181818;
 }
 
 /* make the header letters shake when hoover */
