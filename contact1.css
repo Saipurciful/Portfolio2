@@ -69,15 +69,8 @@
 .containerCon .cardS .contentCard {
     padding: 20px;
     text-align: center;
-    /* transform: translateY(100px);
-    opacity: 0;
-    transition: 0.5s; */
-}
 
-/* .container .cardS:hover .contentCard {
-    transform: translateY(0px);
-    opacity: 1;
-} */
+}
 
 .containerCon .cardS .contentCard h2 {
     position: absolute;

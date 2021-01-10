@@ -7,17 +7,17 @@
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="pictures/android-chrome-192x192.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="portfolio1.css">
+
 </head>
 
 <body style="background-color: #cdaac0; overflow-x: hidden;">
@@ -68,84 +68,122 @@
 
     </div>
 
+    <div class="header-port" style="margin-top: 5%;">
+        <h2 class="logo-port">Portfolio</h2>
+        <ul>
+            <li class="active">all</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Mern</li>
 
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-        <button class="btn" onclick="filterSelection('people')"> People</button>
+        </ul>
     </div>
 
-    <!-- Portfolio Gallery Grid -->
-    <div class="row" style="padding: 25px;">
-        <div class="column nature">
-            <div class="content">
-                <img src="pictures/burger.png" alt="Mountains" style="width:100%">
-                <h4>Mountains</h4>
-                <i class="fab fa-github"></i> Code <br>
-                <i class="fab fa-chrome"></i> Website
+    <section>
 
+        <!-- Women Thumb -->
+        <div class="thumb" data-id="Javascript">
+            <img src="pictures/burger.png" alt="">
 
-            </div>
+            <h4> <a target="_blank" href="https://github.com/Saipurciful/burger"><i class="fab fa-github"></i>
+                    Code</a>
+                <a target="_blank" href="https://evening-wildwood-75697.herokuapp.com/"><i class="fab fa-chrome"></i>
+                    Website</a></h4>
+
         </div>
-        <div class="column nature">
-            <div class="content">
-                <img src="pictures/calendar.png" alt="Lights" style="width:100%">
-                <h4>Lights</h4>
-                <i class="fab fa-github"></i> Code <br>
-                <i class="fab fa-chrome"></i> Website
-            </div>
-        </div>
-        <div class="column nature">
-            <div class="content">
-                <img src="pictures/cocktail.png" alt="Nature" style="width:100%">
-                <h4>Forest</h4>
-                <i class="fab fa-github"></i> Code <br>
-                <i class="fab fa-chrome"></i> Website
-            </div>
+        <div class="thumb" data-id="Javascript">
+            <img src="pictures/calendar.png" alt="">
+
+            <h4> <a target="_blank" href="https://github.com/Saipurciful/DailyCalendar"><i class="fab fa-github"></i>
+                    Code</a>
+                <a target="_blank" href="https://saipurciful.github.io/DailyCalendar/"><i class="fab fa-chrome"></i>
+                    Website</a></h4>
+
         </div>
 
-        <div class="column cars">
-            <div class="content">
-                <img src="pictures/cocktail.png" alt="Car" style="width:100%">
-                <h4>Retro</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
+        <div class="thumb" data-id="Javascript">
+            <img src="pictures/cocktail.png" alt="">
+
+            <h4> <a target="_blank" href="https://github.com/samrod777/Recipe-List-Platform"><i
+                        class="fab fa-github"></i>
+                    Code</a>
+                <a target="_blank" href="https://samrod777.github.io/Recipe-List-Platform/"><i
+                        class="fab fa-chrome"></i>
+                    Website</a></h4>
+
+
         </div>
-        <div class="column cars">
-            <div class="content">
-                <img src="pictures/codeq.png" alt="Car" style="width:100%">
-                <h4>Fast</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
+        <div class="thumb" data-id="Javascript">
+            <img src="pictures/codeq.png" alt="">
+            <h4> <a target="_blank" href="https://github.com/Saipurciful/JS-CodeQuiz"><i class="fab fa-github"></i>
+                    Code</a>
+                <a target="_blank" href="https://saipurciful.github.io/JS-CodeQuiz/"><i class="fab fa-chrome"></i>
+                    Website</a></h4>
+
         </div>
-        <div class="column cars">
-            <div class="content">
-                <img src="pictures/noteTaker.png" alt="Car" style="width:100%">
-                <h4>Classic</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
+        <div class="thumb" data-id="Javascript">
+            <img src="pictures/noteTaker.png" alt="">
+            <h4> <a target="_blank" href="https://github.com/Saipurciful/Note-Taker"><i class="fab fa-github"></i>
+                    Code</a>
+                <a target="_blank" href="https://notetakerapplic.herokuapp.com/"><i class="fab fa-chrome"></i>
+                    Website</a></h4>
+
+        </div>
+        <div class="thumb" data-id="Javascript">
+            <img src="pictures/pwgen.png" alt="">
+            <h4> <a target="_blank" href="https://github.com/Saipurciful/Password-Generator"><i
+                        class="fab fa-github"></i> Code</a>
+                <a target="_blank" href="https://saipurciful.github.io/Password-Generator/"><i
+                        class="fab fa-chrome"></i> Website</a></h4>
         </div>
 
-        <div class="column people">
-            <div class="content">
-                <img src="pictures/pwgen.png" alt="People" style="width:100%">
-                <h4>Girl</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
+        <!-- Men Thumb -->
+        <div class="thumb" data-id="React">
+            <img src="/56-imageGalleryHoverEffects/noteTaker.png" alt="COMMING SOON">
+            <h4><i class="fab fa-github"></i> Code
+                <i class="fab fa-chrome"></i> Website</h4>
+        </div>
+        <div class="thumb" data-id="React">
+            <img src="/56-imageGalleryHoverEffects/noteTaker.png" alt="COMMING SOON">
+            <h4><i class="fab fa-github"></i> Code
+                <i class="fab fa-chrome"></i> Website</h4>
+        </div>
+        <div class="thumb" data-id="React">
+            <img src="/56-imageGalleryHoverEffects/noteTaker.png" alt="COMMING SOON">
+            <h4><i class="fab fa-github"></i> Code
+                <i class="fab fa-chrome"></i> Website</h4>
+        </div>
+        <div class="thumb" data-id="React">
+            <img src="/56-imageGalleryHoverEffects/noteTaker.png" alt="COMMING SOON">
+            <h4><i class="fab fa-github"></i> Code
+                <i class="fab fa-chrome"></i> Website</h4>
+        </div>
+        <div class="thumb" data-id="React">
+            <img src="/56-imageGalleryHoverEffects/noteTaker.png" alt="COMMING SOON">
+            <h4><i class="fab fa-github"></i> Code
+                <i class="fab fa-chrome"></i> Website</h4>
+        </div>
+        <div class="thumb" data-id="React">
+            <img src="/56-imageGalleryHoverEffects/noteTaker.png" alt="COMMING SOON">
+            <h4><i class="fab fa-github"></i> Code
+                <i class="fab fa-chrome"></i> Website</h4>
         </div>
 
-    </div>
+        <!-- Mern Thumb -->
+        <div class="thumb" data-id="Mern">
+            <img src="/56-imageGalleryHoverEffects/noteTaker.png" alt="COMMING SOON">
+            <h4><i class="fab fa-github"></i> Code
+                <i class="fab fa-chrome"></i> Website</h4>
+        </div>
 
-    <footer class="foot">
-
-        <p>2021 Copyright. All Rights Reserved.</p>
-    </footer>
-
+    </section>
     <!-- Script -->
     <script src="portfolio1.js"></script>
-    <script src="script.js"></script>
 
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 
