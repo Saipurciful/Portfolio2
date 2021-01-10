@@ -60,13 +60,15 @@ section {
     object-fit: cover;
 }
 
-.thumb h4 i {
+.thumb h4 i,
+h4 {
     font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 3px;
-    text-align: center;
+    text-align: left;
     line-height: 80px;
-    margin-left: 10%;
+    margin-left: 0;
+    /* color: #742a83; */
 
 }
 
