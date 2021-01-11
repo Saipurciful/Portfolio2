@@ -60,16 +60,21 @@ section {
     object-fit: cover;
 }
 
-.thumb h4 i,
-h4 {
+.thumb h4 i {
     font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 3px;
     text-align: left;
     line-height: 80px;
     margin-left: 0;
-    /* color: #742a83; */
 
+
+}
+
+.thumb h3 {
+    margin-left: 0;
+    text-align: left;
+    margin-top: 4%;
 }
 
 .thumb:hover {
