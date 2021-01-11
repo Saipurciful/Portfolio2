@@ -1,0 +1,9 @@
+.body::before {
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(40% at right 90%);
+}
+
+.body::after {
+    background: linear-gradient(hsl(207, 90%, 54%), #e91e63);
+    clip-path: circle(30% at 10% 10%);
+}
